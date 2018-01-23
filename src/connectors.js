@@ -1,6 +1,6 @@
-import Sequelize from 'sequelize';
-import casual from 'casual';
-import _ from 'lodash';
+let Sequelize = require('sequelize');
+let casual = require('casual');
+let _ = require('lodash');
 
 const db = new Sequelize('blog', null, null, {
   dialect: 'sqlite',

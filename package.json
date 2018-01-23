@@ -2,7 +2,7 @@
   "name": "graphql-express-apollo",
   "version": "1.0.0",
   "description": "A GraphQL server built on Node.js, Express and Apollo",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node ./server.js",
     "dev": "nodemon ./server.js --exec babel-node",

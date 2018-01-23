@@ -1,7 +1,7 @@
-import express from 'express';
-import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
-import bodyParser from 'body-parser';
-import schema from './src/schema';
+let express = require('express');
+let { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
+let bodyParser = require('body-parser');
+let schema = require('./src/schema.js');
 
 const GRAPHQL_PORT = 3000;
 

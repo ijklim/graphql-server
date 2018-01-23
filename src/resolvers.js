@@ -1,4 +1,4 @@
-import { Author, View } from './connectors';
+let { Author, View } = require('./connectors');
 
 const resolvers = {
   Query: {
@@ -24,4 +24,4 @@ const resolvers = {
   }
 };
 
-export default resolvers;
+module.exports = resolvers;
