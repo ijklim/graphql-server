@@ -5,12 +5,12 @@ let schema = require('./src/schema.js');
 
 const GRAPHQL_PORT = 3100;
 
-const graphQLServer = express();
+const app = express();
 
-graphQLServer.use('/graphql', bodyParser.json() ? bodyParser.json() : {}, graphqlExpress({ schema }));
-graphQLServer.use('/', graphiqlExpress({ endpointURL: '/graphql' }));
+app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
+app.use('/', graphiqlExpress({ endpointURL: '/graphql' }));
 
-graphQLServer.listen(process.env.PORT || GRAPHQL_PORT, () =>
+app.listen(process.env.PORT || GRAPHQL_PORT, () =>
   console.log(
     `GraphiQL is now running`
   )
