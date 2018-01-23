@@ -5,8 +5,6 @@ const typeDefs = `
 type Query {
   author(firstName: String, lastName: String): Author
   allAuthors: [Author]
-  getFortuneCookie: String # we'll use this later
-  getCode: Int
 }
 
 type Author {
