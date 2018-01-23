@@ -39,4 +39,4 @@ PostModel.belongsTo(AuthorModel);
 const Author = db.models.author;
 const Post = db.models.post;
 
-export { Author, Post };
+module.exports = { Author, Post };
