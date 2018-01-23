@@ -3,7 +3,7 @@ let { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 let bodyParser = require('body-parser');
 let schema = require('./src/schema.js');
 
-const GRAPHQL_PORT = 3000;
+const GRAPHQL_PORT = 3100;
 
 const graphQLServer = express();
 
